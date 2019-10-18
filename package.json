@@ -1,0 +1,20 @@
+{
+  "name": "weathermanapp",
+  "version": "1.0.0",
+  "description": "API for weather anywhere in the world on your device, line charts included for free. Any device in the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefutureseer/weathermanapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thefutureseer/weathermanapp/issues"
+  },
+  "homepage": "https://github.com/thefutureseer/weathermanapp#readme"
+}
