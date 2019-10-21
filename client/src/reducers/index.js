@@ -1,32 +1,28 @@
-import axios from 'axios';
+import { combineReducers } from 'redux';
+import WeatherReducer from './reducer_weather';
 
-const API_KEY = '8edc8745f9f9307f7a8e2bc2d1e4b4a3';
-const ROOT_URL = `https://samples.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
+const rootReducer = combineReducers({
+  weather: WeatherReducer
+});
 
-export const FETCH_WEATHER = 'FETCH_WEATHER';
+export default rootReducer;
 
-export default function fetchWeather(city) {
- const url = `${ROOT_URL}&q=${city},us`;
- const request = axios.get(url);
 
- return {
-  type: FETCH_WEATHER,
-  payload: request
- };
-}
-// import React from 'react';
-// import ReactDom from 'react-dom';
-// import { Provider } from 'react-redux';
-// import { createStore, applyMiddleware } from 'redux';
-// import ReduxPromise from 'redux-promise';
 
-// import App from '../components/App';
-// import reducers from '../reducers';
+// import axios from 'axios';
 
-// const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
+// const API_KEY = '8edc8745f9f9307f7a8e2bc2d1e4b4a3';
+// const ROOT_URL = `https://samples.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`;
 
-// ReactDom.render(
-//   <Provider store={createStoreWithMiddleware(reducers)} >
-//     <App />
-//   </Provider>, document.querySelector('.container')
-// );
+// export const FETCH_WEATHER = 'FETCH_WEATHER';
+
+// export default function fetchWeather(city) {
+//  const url = `${ROOT_URL}&q=${city},us`;
+//  const request = axios.get(url);
+
+//  return {
+//   type: FETCH_WEATHER,
+//   payload: request
+//  };
+// }
+
