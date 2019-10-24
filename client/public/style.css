@@ -1,0 +1,33 @@
+div.my-marker {
+  font-size: 18px;
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.input-group {
+  margin: 10px 0px;
+}
+
+.input-group, .form-control {
+  box-shadow: inset 0 0 13px black;
+}
+
+svg {
+  height: 100px;
+}
+
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+} 
+
+tr {
+box-shadow: inset 0 0 5px 9px black;
+}
+
+.btn {
+  box-shadow: inset 0 0 4px 1px black;
+}
